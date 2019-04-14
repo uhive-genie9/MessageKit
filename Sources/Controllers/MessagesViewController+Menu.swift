@@ -29,11 +29,11 @@ extension MessagesViewController { // swiftlint:disable:this explicit_acl explic
 
     // MARK: - Register / Unregister Observers
 
-    open func addMenuControllerObservers() {
+    internal func addMenuControllerObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(MessagesViewController.menuControllerWillShow(_:)), name: UIMenuController.willShowMenuNotification, object: nil)
     }
 
-    open func removeMenuControllerObservers() {
+    internal func removeMenuControllerObservers() {
         NotificationCenter.default.removeObserver(self, name: UIMenuController.willShowMenuNotification, object: nil)
     }
 
