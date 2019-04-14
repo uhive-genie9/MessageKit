@@ -101,7 +101,7 @@ public enum MessageStyle {
 
     // MARK: - Internal
     
-    internal static let bubbleImageCache: NSCache<NSString, UIImage> = {
+    public static let bubbleImageCache: NSCache<NSString, UIImage> = {
         let cache = NSCache<NSString, UIImage>()
         cache.name = "com.messagekit.MessageKit.bubbleImageCache"
         return cache

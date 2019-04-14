@@ -23,17 +23,17 @@
  */
 
 import Foundation
-import MessageInputBar
+
 
 extension MessagesViewController { // swiftlint:disable:this explicit_acl explicit_top_level_acl
 
     // MARK: - Register / Unregister Observers
 
-    internal func addMenuControllerObservers() {
+    open func addMenuControllerObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(MessagesViewController.menuControllerWillShow(_:)), name: UIMenuController.willShowMenuNotification, object: nil)
     }
 
-    internal func removeMenuControllerObservers() {
+    open func removeMenuControllerObservers() {
         NotificationCenter.default.removeObserver(self, name: UIMenuController.willShowMenuNotification, object: nil)
     }
 
