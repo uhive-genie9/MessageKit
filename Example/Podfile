@@ -2,8 +2,8 @@ platform :ios, '9.0'
 
 target 'ChatExample' do
   use_frameworks!
-  pod 'MessageKit', :path => '../', :branch => 'typingIndicatorView'
-  pod 'MessageInputBar', :git => 'https://github.com/MessageKit/MessageInputBar.git', :branch => 'master'
+  pod 'MessageKit', :git => 'https://github.com/MessageKit/MessageKit.git'
+  #pod 'MessageInputBar', :git => 'https://github.com/MessageKit/MessageInputBar.git', :branch => 'master'
 
 target 'ChatExampleTests' do
   inherit! :search_paths
