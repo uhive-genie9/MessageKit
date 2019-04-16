@@ -2,7 +2,7 @@ platform :ios, '9.0'
 
 target 'ChatExample' do
   use_frameworks!
-  pod 'MessageKit', :git => 'https://github.com/MessageKit/MessageKit.git'
+  pod 'MessageKit', :git => 'https://github.com/MessageKit/MessageKit.git', :branch => '3.0.0-beta'
   #pod 'MessageInputBar', :git => 'https://github.com/MessageKit/MessageInputBar.git', :branch => 'master'
 
 target 'ChatExampleTests' do
